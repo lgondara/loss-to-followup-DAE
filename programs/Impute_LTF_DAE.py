@@ -10,7 +10,7 @@ This is a temporary script file.
 """
 Created on Thu Oct 13 20:21:56 2016
 
-@author: Lovedeep Gondara
+@author: Anon
 """
 # Two lines below, if you have a GPU
 import os
@@ -86,7 +86,7 @@ decoded = Dense(32,activation='relu')(decoded)
 
 
 # this model maps an input to its reconstruction
-autoencoder = Model(input=input_img, output=decoded)
+autoencoder = Model(input=input_data, output=decoded)
 
 # compile using mse loss
 autoencoder.compile(optimizer='adam', loss='mse')
